@@ -1,0 +1,14 @@
+08 Dec 2016
+Steps:
+
+Import data set
+Missing Value Treatment
+  for object dtype
+  for numerics
+
+Outlier Treatment
+
+Feature Importance
+
+Standardize input features
+
