@@ -12,3 +12,7 @@ Feature Importance
 
 Standardize input features
 
+13 Dec 2016
+Make a XGB submission without any edits to the data to set a baseline
+
+Kernel on EDA: https://www.kaggle.com/xchmiao/house-prices-advanced-regression-techniques/detailed-data-exploration-in-python/comments
