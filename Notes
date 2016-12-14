@@ -16,3 +16,32 @@ Standardize input features
 Make a XGB submission without any edits to the data to set a baseline
 
 Kernel on EDA: https://www.kaggle.com/xchmiao/house-prices-advanced-regression-techniques/detailed-data-exploration-in-python/comments
+
+14 Dec 2016
+Learn XGB from here: http://education.parrotprediction.teachable.com/courses/practical-xgboost-in-python/lectures/1137869
+
+XGB with the native API
+XGB in Sklearn
+
+CV in XGB
+
+
+what does the num_rounds do in XGB? it is num_boosting_rounds
+
+Also, the watchlist of native API can be used only in a Cross val kind of setup as it requires a label as well in the test set,
+so we can't use the actual test set (as it would not have any labels)
+
+#please note that the fit function of sklearn xgb does not take the DMatrix (dtrain) as input,
+#it rather takes the values as is, i.e., final_train[features], y_train
+
+The sklearn and native models are also very different; sklearn model has params available as get_params while the native model
+is called a Booster
+
+https://jessesw.com/XG-Boost/
+The way XGB has been used in the blog:
+1. Sklearn to do GridSearch to find the optimal parameters for the XGB model
+2. Use the parameters from above search adn build a native XGB model with XGB.cv and not train,
+  with early stopping (though without watchlist)
+3. Then use the n_rounds (where the early stop occured) from above step as the num_rounds parameter to the native XGB model (in Step2)
+4. Use XGB.train with all the best params and n_rounds from all above
+
