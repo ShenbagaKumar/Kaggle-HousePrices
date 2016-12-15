@@ -45,3 +45,6 @@ The way XGB has been used in the blog:
 3. Then use the n_rounds (where the early stop occured) from above step as the num_rounds parameter to the native XGB model (in Step2)
 4. Use XGB.train with all the best params and n_rounds from all above
 
+GridSearchCV is to do parameter tuning on an XGBRegressor
+xgb.cv is to get the best value for num_rounds
+
