@@ -1,0 +1,13 @@
+This file is to create a road map for this project and to track progress
+
+19 Dec 2016 : Completed till Date : XGB and Tuning
+
+End Objective:
+  Should have used - XGB, Other Linear Regression Techniques - Lasso, SVM, kNN
+  Build an Ensemble - not just simple average; stacking, etc.
+  Do EDA - missing value treatment, transformations, etc
+  Create a Kaggle Kernel
+  
+By End of Week 25 Dec:
+  Fix on the best set of parameters for XGB
+  Use other linear regression techniques - Lasso, SVM, kNN
